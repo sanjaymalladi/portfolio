@@ -1,5 +1,5 @@
-
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -71,8 +71,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				dear: ['DearFamily', 'sans-serif'],
+				sans: ['Readex Pro', 'sans-serif'],
+				marker: ['Permanent Marker', 'cursive'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -128,5 +128,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [animate],
 } satisfies Config;

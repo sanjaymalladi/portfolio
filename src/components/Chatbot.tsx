@@ -27,36 +27,54 @@ Summary:
 Highly motivated Chemical Engineering student at NIT Andhra Pradesh and Data Science student at IIT Madras, adept at leveraging AI and machine learning to address real-world challenges. Currently contributing as an AI Intern at Prosapiens HR Solutions, focusing on developing software and AI-driven solutions to streamline recruitment processes. Proven ability to implement AI for research and technical projects. Published a book chapter on Nanocomposites/Nanomaterials in Biofuel Production.
 
 Work Experience:
-- Prosapiens HR Solutions: AI Intern (Developing recruitment software/AI solutions)
-- IIT BHU, Varanasi: Summer Intern (CO2 hydrogenation research, Gas Chromatography, XRD)
-- TEDx NIT Andhra Pradesh: Sponsorship Lead (Secured 80% budget, 2.5x engagement increase)
-- Graphic Cafe - Media Cell: Technical Head (Increased engagement by 30%)
-- Chemical Engineering Association: Joint Secretary (Organized workshops, 20% participation increase)
+- Prosapiens HR Solutions: AI Intern
+  - Developing software and AI-powered solutions to enhance and ease the recruitment process
+- Indian Institute of Technology (BHU), Varanasi: Summer Intern
+  - Conducted CO2 hydrogenation using Ni/MgAl2O3 catalysts for chemical synthesis research
+  - Performed product analysis using Gas Chromatography and catalyst characterization with X-ray Diffraction
+- TEDx NIT Andhra Pradesh: Sponsorship Lead
+  - Secured sponsorships covering 80% of the event budget by targeting industry partners
+  - Increased event engagement by 2.5x using data-driven strategies
+- Graphic Cafe - Media Cell, NIT Andhra Pradesh: Technical Head
+  - Led the design and execution of technical content, increasing digital engagement by 30%
+  - Managed workflows for creating and publishing event-related media
+- Chemical Engineering Association (ChEA), NIT Andhra Pradesh: Joint Secretary
+  - Organized workshops and events, achieving a 20% increase in participation
+  - Improved faculty-student communication, enhancing satisfaction by 15%
 
 Education:
-- B.Tech in Chemical Engineering from NIT Andhra Pradesh
-- B.Sc in Data Science from IIT Madras
+- Bachelor of Technology (B.Tech) in Chemical Engineering, National Institute of Technology, Andhra Pradesh
+- Bachelor of Science (B.Sc) in Data Science, Indian Institute of Technology, Madras
 
 Publications:
-Book Chapter on "Nanocomposites/Nanomaterials and the Risk Management of Biofuels Production" in Springer Nature, 2025
+Book Chapter: "Nanocomposites/Nanomaterials and the Risk Management of Biofuels Production" in Nanomaterials as a Catalyst for Biofuel Production, Springer Nature, 2025
 
 Projects:
-1. Heat GPT (Chatbot for heat exchanger data)
-2. AI Teaching Assistant (Gemini API for DSA teaching)
-3. Career AI (In Progress - ML/NLP career recommendation)
-4. AI Notes Maker (LLM-based academic notes)
+1. Heat GPT
+   - Developed a chatbot to interact with heat exchanger data locally
+   - Designed a static dashboard to provide an overview of the data
+2. AI Teaching Assistant
+   - Developing an AI-powered assistant for teaching Data Structures and Algorithms using the Socratic method and Gemini API
+   - Designed interactive question-answering flows with adaptive learning models
+3. Career AI (In Progress)
+   - Building a personalized career recommendation tool using machine learning and NLP techniques
+   - Focuses on skill tracking and tailored growth suggestions
+4. AI Notes Maker
+   - Created an AI system to generate concise, context-aware notes from academic resources using local LLMs
+   - Integrated semantic analysis and NLP for summarization and chat functionality with notes
+5. Virtual Try-On using AI
+   - Utilized ComfyUI and the Segment Anything Model (SAM) for virtual try-on feature
+   - Allows users to visualize different outfits on a segmented image of themselves
+6. AI-Generated Ramp Walk Video
+   - Leveraged image-to-video models (WAN 2.1) and trained LoRA for video generation
+   - Generated realistic ramp walk videos with seamless outfit changes
 
 Skills:
-- Programming: Python, TensorFlow, PyTorch, SQL, Pandas, NumPy
-- AI/ML: NLP, Computer Vision, Data Analysis
-- Frameworks: Flask, Streamlit, FastAPI
-- Tools: Jupyter, Git, Power BI, Matplotlib, Seaborn
-
-LinkedIn Additional Info:
-- Top Skills: Google Earth Engine, AI, Sponsorship Management
-- Certifications: PwC Power BI, LLMOPS, AI/ML for Geodata Analysis
-- Managed YouTube channel (2500+ subs)
-- Designed Google-inspired portfolio (no-code tools)
+Programming: Python, TensorFlow, PyTorch, SQL, Pandas, NumPy
+AI/ML: Natural Language Processing, Computer Vision, Data Analysis
+Frameworks: Flask, Streamlit, FastAPI
+Tools: Jupyter, Git, Power BI, Matplotlib, Seaborn, ComfyUI
+Soft Skills: Collaboration, Problem-Solving, Communication
 
 You should act as a knowledgeable assistant. Provide detailed, accurate responses based *only* on the context above. If asked about something not covered, politely state you don't have that specific information. Keep responses concise but informative.`;
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '@/context/ThemeContext';
 import { Button } from '@/components/ui/button';
-import { Home, Search, Heart, User, Sun, Moon, Menu, X } from 'lucide-react';
+import { Home, Code2, UserCircle2, Mail, Sun, Moon, Menu, X } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
 const Navigation: React.FC = () => {
@@ -31,9 +31,9 @@ const Navigation: React.FC = () => {
 
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
-    { id: 'projects', label: 'Projects', icon: Search },
-    { id: 'about', label: 'About', icon: Heart },
-    { id: 'contact', label: 'Contact', icon: User }
+    { id: 'projects', label: 'Projects', icon: Code2 },
+    { id: 'about', label: 'About', icon: UserCircle2 },
+    { id: 'contact', label: 'Contact', icon: Mail }
   ];
 
   return (
