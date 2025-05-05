@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
+import { Mail, Linkedin, Phone, MapPin } from 'lucide-react';
 
 // Replace this with your actual SheetDB API endpoint
 const SHEET_DB_API = 'https://sheetdb.io/api/v1/q5h2m18eheeb4';
@@ -156,31 +157,45 @@ const ContactSection: React.FC = () => {
                 
                 <div className="space-y-3">
                   <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center">📧</div>
+                    <div className="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center">
+                      <Mail className="w-5 h-5 text-neon-blue" />
+                    </div>
                     <div className="ml-3">
                       <h5 className="font-medium">Email</h5>
-                      <p className="text-sm text-muted-foreground">malladisanjay29@gmail.com</p>
+                      <a href="mailto:malladisanjay29@gmail.com" className="text-sm text-muted-foreground hover:underline">
+                        malladisanjay29@gmail.com
+                      </a>
                     </div>
                   </div>
                   
                   <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center">🔗</div>
+                    <div className="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center">
+                      <Linkedin className="w-5 h-5 text-neon-blue" />
+                    </div>
                     <div className="ml-3">
                       <h5 className="font-medium">LinkedIn</h5>
-                      <p className="text-sm text-muted-foreground">linkedin.com/in/sanjaymalladi</p>
+                      <a href="https://linkedin.com/in/sanjaymalladi" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:underline">
+                        linkedin.com/in/sanjaymalladi
+                      </a>
                     </div>
                   </div>
                   
                   <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center">📱</div>
+                    <div className="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center">
+                      <Phone className="w-5 h-5 text-neon-blue" />
+                    </div>
                     <div className="ml-3">
                       <h5 className="font-medium">Phone</h5>
-                      <p className="text-sm text-muted-foreground">+91 9642371883</p>
+                      <a href="tel:+919642371883" className="text-sm text-muted-foreground hover:underline">
+                        +91 9642371883
+                      </a>
                     </div>
                   </div>
                   
                   <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center">📍</div>
+                    <div className="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center">
+                      <MapPin className="w-5 h-5 text-neon-blue" />
+                    </div>
                     <div className="ml-3">
                       <h5 className="font-medium">Location</h5>
                       <p className="text-sm text-muted-foreground">Tadepalligudem, Andhra Pradesh</p>
