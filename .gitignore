@@ -33,4 +33,4 @@ dist-ssr
 
 # Local temporary artifacts
 Recording *.mp4
-assests/
+/assests/
