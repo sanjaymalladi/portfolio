@@ -6,6 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.agents/
+
 
 node_modules
 dist
@@ -28,3 +30,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local temporary artifacts
+Recording *.mp4
+assests/

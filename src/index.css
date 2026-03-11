@@ -1,127 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'DearFamily';
-  src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 222 47% 11%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222 47% 11%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222 47% 11%;
-    --radius: 0.5rem;
-  }
+    :root {
+        --background: 0 0% 94%;
+        --foreground: 0 0% 7%;
+        --border: 0 0% 7%;
+    }
 
-  .dark {
-    --background: 0 0% 0%;
-    --foreground: 210 40% 98%;
-    --card: 0 0% 0%;
-    --card-foreground: 210 40% 98%;
-    --popover: 0 0% 0%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 0 0% 0%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 0 0% 0%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 0 0% 0%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 0 0% 0%;
-    --input: 0 0% 0%;
-    --ring: 212.7 26.8% 83.9%;
-  }
+    body {
+        @apply font-outfit antialiased bg-bauhaus-offwhite text-bauhaus-ink;
+    }
 
-  * {
-    @apply border-border;
-    scroll-behavior: smooth;
-  }
+    /* Grain texture overlay */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        background-image:
+            radial-gradient(circle at 50% 50%, rgba(18, 18, 18, 0.08) 1px, transparent 1px);
+        background-size: 3px 3px;
+        opacity: 0.5;
+    }
 
-  body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Readex Pro', sans-serif;
-  }
-
-  .glass {
-    @apply backdrop-blur-xl bg-black/20 border border-white/10 shadow-lg;
-  }
-  
-  .neo-blur {
-    @apply backdrop-blur-2xl bg-black/40 border border-white/10;
-  }
-  
-  .text-glow {
-    text-shadow: 0 0 8px rgba(139, 92, 246, 0.7), 0 0 12px rgba(139, 92, 246, 0.5);
-  }
-
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-  }
-
-  .cursor {
-    display: inline-block;
-    width: 2px;
-    background-color: currentColor;
-    margin-left: 2px;
-    animation: blink 1s step-end infinite;
-  }
-
-  @keyframes blink {
-    from, to { opacity: 1; }
-    50% { opacity: 0; }
-  }
-  
-  .text-gradient-primary {
-    @apply bg-gradient-to-r from-neon-purple to-neon-blue bg-clip-text text-transparent;
-  }
-  
-  .animate-blink {
-    animation: blink 1s step-end infinite;
-  }
+    /* 44px background grid */
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        background-image:
+            linear-gradient(to right, rgba(18, 18, 18, 0.03) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(18, 18, 18, 0.03) 1px, transparent 1px);
+        background-size: 44px 44px;
+    }
 }
 
 @layer components {
-  .container {
-    @apply px-4 md:px-6 max-w-7xl mx-auto;
-  }
-  
-  .heading {
-    @apply font-bold text-3xl md:text-4xl lg:text-5xl;
-    @apply dark:bg-gradient-to-r dark:from-white dark:to-gray-300 dark:bg-clip-text dark:text-transparent;
-  }
-  
-  .neon-border {
-    @apply relative;
-  }
-  
-  .neon-border::before {
-    content: "";
-    @apply absolute inset-0 rounded-md -z-10 bg-gradient-to-r from-neon-purple to-neon-pink p-[1px];
-  }
+
+    /* Bauhaus Typography */
+    .bauhaus-headline {
+        @apply font-outfit font-black uppercase leading-none tracking-tight;
+        font-size: clamp(42px, 8vw, 68px);
+        line-height: 0.95;
+    }
+
+    .bauhaus-subheader {
+        @apply font-outfit font-medium uppercase;
+        font-size: clamp(18px, 2vw, 24px);
+        letter-spacing: 0.2em;
+    }
+
+    .bauhaus-body {
+        @apply font-outfit font-medium;
+        font-size: clamp(15px, 1.5vw, 18px);
+        line-height: 1.6;
+    }
+
+    /* Hard shadow containers */
+    .bauhaus-container {
+        @apply border-4 border-bauhaus-ink bg-white shadow-hard;
+    }
+
+    /* Interactive button */
+    .bauhaus-btn {
+        @apply border-4 border-bauhaus-ink bg-white px-6 py-3 font-outfit font-bold uppercase tracking-widest shadow-hard;
+        transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .bauhaus-btn:hover {
+        @apply -translate-y-1 shadow-hardLg;
+        transform: scale(1.03) translateY(-4px);
+    }
+
+    .bauhaus-btn:active {
+        @apply shadow-none;
+        transform: translate(2px, 2px);
+    }
+
+    /* Card hover effect */
+    .bauhaus-card {
+        @apply border-4 border-bauhaus-ink bg-white shadow-hard;
+        transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .bauhaus-card:hover {
+        @apply -translate-y-1 shadow-hardLg;
+        transform: scale(1.03) translateY(-4px);
+    }
+
+    /* Horizontal divider */
+    .bauhaus-divider {
+        @apply w-full h-1 bg-bauhaus-ink;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
 }
