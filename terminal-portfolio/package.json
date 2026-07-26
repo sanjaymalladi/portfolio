@@ -1,0 +1,15 @@
+{
+  "name": "terminal-portfolio",
+  "version": "1.0.0",
+  "description": "SSH Terminal Portfolio",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "figlet": "^1.8.0",
+    "picocolors": "^1.1.1",
+    "ssh2": "^1.16.0"
+  }
+}
